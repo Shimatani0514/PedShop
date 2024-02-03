@@ -1,0 +1,34 @@
+<header class="bg-amber-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- ロゴ -->
+            <%= image_tag "スクリーンショット\ 2024-01-23\ 162555", class:"rounded-full w-10" %>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="header-second">
+                <ul class="flex space-x-4">
+                    <li><%= link_to "top", pages_top_path, class:"text-white hover:text-gray-300" %></li>
+                    <li><%= link_to "service", pages_service_path, class:"text-white hover:text-gray-300" %></li>
+                    <li><%= link_to "reservation", pages_reservation_path, class:"text-white hover:text-gray-300" %></li>
+                    <li><%= link_to "access", pages_access_path, class:"text-white hover:text-gray-300" %></li>
+                    <li><%= link_to "contact", pages_lnquiry_path, class:"text-white hover:text-gray-300" %></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="openbtn5">
+            <span></span>
+            <span>Menu</span>
+            <span></span>
+            </div>
+        </div>
+</header>
+
+<nav class="openbtn5-menu">
+    <ul>
+        <li><%= link_to "top", pages_top_path, class: "hover:text-gray-500" %></li>
+        <li><%= link_to "service", pages_service_path, class: "hover:text-gray-500" %></li>
+        <li><%= link_to "reservation", pages_reservation_path, class: "hover:text-gray-500" %></li>
+        <li><%= link_to "access", pages_access_path, class: "hover:text-gray-500" %></li>
+        <li><%= link_to "contact", pages_lnquiry_path, class: "hover:text-gray-500" %></li>
+    </ul>
+</nav>
